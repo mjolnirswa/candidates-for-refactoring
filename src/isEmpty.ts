@@ -1,3 +1,3 @@
-if (!isEmpty(list)) {
+if (!isEmpty(list)) { // может стоит использовать просто list.length > 0
   // код, если список не пуст
 }

@@ -1,9 +1,10 @@
 const pay = () => {
   for (let e of employees) {
     if (e.isPayday()) {
-      const pay = e.calculatePay();
+      const pay = e.calculatePay();// Локальная переменная pay не обязательно должна называться так же, как и имя функции
+      // Лучше использовать более конкретное название, например, employeePay, чтобы избежать путаницы
 
-      e.deliverPay(pay);
+      e.deliverPay(pay); // Метод deliverPay выполняет доставку заработной платы, но нет обработки ошибок или проверки на успешность операции
     }
   }
 };
